@@ -11,36 +11,49 @@
     />
     <title>MY HTML</title>
     <style>
-      ul {
-        list-style-type: none;
+      table,
+      th,
+      td {
+        border: 2px solid grey;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 12px;
+      }
+      tfoot {
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <ul>
-      <li>About</li>
-      <li>Home</li>
-      <li>Projects</li>
-    </ul>
-
-    <ol>
-      <li>Open Github</li>
-      <li>Go to Project</li>
-      <li>Fork and Star</li>
-    </ol>
-    <h2>Description List 👇</h2>
-    <dl>
-      <dt>Course Title</dt>
-      <dd>Frontend Mastery</dd>
-      <dt>What you learn</dt>
-      <dd>HTML</dd>
-
-      <dd>CSS</dd>
-      <dd>Javascript</dd>
-      <dd>React</dd>
-      <dt>Course Duration</dt>
-      <dd>50 Hrs</dd>
-    </dl>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Gadgets</th>
+        </tr>
+        <tr>
+          <th>Item</th>
+          <th>Cost Of Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mouse</td>
+          <td>10$</td>
+        </tr>
+        <tr>
+          <td>KeyBoard</td>
+          <td>20$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>30$</th>
+        </tr>
+      </tfoot>
+    </table>
 
     <script src="index.js"></script>
   </body>
