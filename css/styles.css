@@ -2,25 +2,23 @@ body {
   margin: 12px;
 }
 
-article p:first-of-type {
+p::first-letter {
   font-size: 140%;
-  font-style: italic;
+  font-weight: bold;
 }
-
-article :last-child {
+p::first-line {
   font-weight: bold;
 }
 
-ul li:nth-child(3n) {
-  color: deeppink;
+::selection {
+  background-color: pink;
 }
 
-a:link,
-a:visited {
-  color: dodgerblue;
+p::before {
+  content: "...";
 }
 
-a:hover,
-a:focus {
-  color: green;
+p::after {
+  content: ">";
+  display: block;
 }
