@@ -10,26 +10,21 @@
       content="Track your Fitness at your Finger Tips!"
     />
     <title>MY HTML</title>
-    <style>
-      div {
-        background-color: yellow;
-      }
-    </style>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <main>
+    <p>
+      I am an Immediate Sibling. Present at top of the DOM. So no styles applied
+    </p>
+    <section id="product">
+      <p>I am an immediate child</p>
       <section>
-        <article class="text1">text1</article>
-        <article class="text2">text2</article>
-        <article id="text3">Text 3</article>
+        <p>I am a child.</p>
       </section>
-      <section>
-        <a href="https://google.com" target="_blank">Google</a>
-      </section>
-    </main>
-    <footer></footer>
+    </section>
+    <p>I am an immediate Sibling. (Overrided)</p>
+    <p>I am at same level.</p>
     <script src="index.js"></script>
   </body>
 </html>

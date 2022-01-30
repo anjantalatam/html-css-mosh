@@ -2,27 +2,22 @@ body {
   margin: 12px;
 }
 
-.text1 {
-  background-color: green;
+#product p {
+  /* selects all p children of #product */
+  color: red;
 }
 
-#text3 {
-  background-color: red;
-}
-
-a[href='https://google.com']
-{
-  color: orange;
-}
-
-a[href*="google"] {
+#product > p {
+  /* selects immediate children that are p */
   color: green;
 }
 
-a[href^="https"] {
-  color: black;
+#product + p {
+  /* selects p that are immediate after #product  */
+  color: blue;
 }
 
-a[href$=".com"] {
-  color: violet;
+#product ~ p {
+  /* slects p that are present after #product */
+  color: rgb(27, 190, 231);
 }
