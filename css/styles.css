@@ -1,7 +1,28 @@
 body {
-  margin: 2px;
+  margin: 12px;
 }
 
-div {
-  background-color: pink;
+.text1 {
+  background-color: green;
+}
+
+#text3 {
+  background-color: red;
+}
+
+a[href='https://google.com']
+{
+  color: orange;
+}
+
+a[href*="google"] {
+  color: green;
+}
+
+a[href^="https"] {
+  color: black;
+}
+
+a[href$=".com"] {
+  color: violet;
 }
