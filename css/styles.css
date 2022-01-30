@@ -2,22 +2,25 @@ body {
   margin: 12px;
 }
 
-#product p {
-  /* selects all p children of #product */
-  color: red;
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
 }
 
-#product > p {
-  /* selects immediate children that are p */
+article :last-child {
+  font-weight: bold;
+}
+
+ul li:nth-child(3n) {
+  color: deeppink;
+}
+
+a:link,
+a:visited {
+  color: dodgerblue;
+}
+
+a:hover,
+a:focus {
   color: green;
-}
-
-#product + p {
-  /* selects p that are immediate after #product  */
-  color: blue;
-}
-
-#product ~ p {
-  /* slects p that are present after #product */
-  color: rgb(27, 190, 231);
 }
