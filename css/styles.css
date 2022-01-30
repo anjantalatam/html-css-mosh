@@ -2,23 +2,22 @@ body {
   margin: 12px;
 }
 
-p::first-letter {
-  font-size: 140%;
-  font-weight: bold;
-}
-p::first-line {
-  font-weight: bold;
+h1 {
+  color: dodgerblue; /* 001 */
 }
 
-::selection {
-  background-color: pink;
+.product {
+  color: yellow; /* 010 */
 }
 
-p::before {
-  content: "...";
+#product {
+  color: pink; /* 100 */
 }
 
-p::after {
-  content: ">";
-  display: block;
+h1#product {
+  color: dodgerblue; /* 101 */
+}
+
+.item #product {
+  color: grey; /* 110 */
 }
